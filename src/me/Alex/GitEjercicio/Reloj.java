@@ -69,7 +69,7 @@ public class Reloj {
 
 		for(int i = 0; i < numEquipos; i++) {
 			System.out.print("Dime el equipo número " + (i + 1) + ": ");
-			liga.add("Entrada" + i);
+			liga.add("Entrada:" + i);
 		}
 
 		liga2 =  liga;
