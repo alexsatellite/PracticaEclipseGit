@@ -6,6 +6,7 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.io.InputStream;
 import java.io.OutputStream;
+import java.util.ArrayList;
 
 public class Reloj {
 	private int hora, minutos, segundos;
@@ -55,5 +56,31 @@ public class Reloj {
 		} catch (IOException ioe){
 		  ioe.printStackTrace();
 		}
+	}
+	
+	
+	public void print() {
+		int numEquipos = 5;
+
+		ArrayList<String> liga = new ArrayList<>();
+		ArrayList<String> liga2 = new ArrayList<>();
+
+		System.out.println();
+
+		for(int i = 0; i < numEquipos; i++) {
+			System.out.print("Dime el equipo número " + (i + 1) + ": ");
+			liga.add("Entrada" + i);
+		}
+
+		liga2 =  liga;
+
+		System.out.println("\n\tArrayList liga: " + liga);
+		System.out.println("\tArrayList liga2: " + liga2);
+
+		System.out.println("\n\tCantidad de valores del ArrayList liga: " + liga.size());
+
+		liga.remove(4);
+		System.out.println("\n\tPosición 4 del ArrayList liga borrado: " + liga);
+
 	}
 }
